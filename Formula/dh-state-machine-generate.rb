@@ -7,6 +7,7 @@ class DhStateMachineGenerate < Formula
 
   depends_on :xcode => :build
   depends_on :macos
+  depends_on "jq"
 
   def install
     system "make", "install", "PREFIX=#{prefix}"
